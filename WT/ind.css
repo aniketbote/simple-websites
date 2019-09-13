@@ -1,0 +1,19 @@
+name{
+	background-color: yellow;
+	text-align: center;
+	font-weight: bold;
+  display: block;
+}
+year{
+	background-color: blue;
+	text-align: center;
+}
+album{
+	background-color: red;
+	text-align: center;
+}
+rating{
+	background-color: green;
+	text-align: center;
+
+}

@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function validateform()
+        {
+          var x=document.forms['lol']['name'].value;
+          if(x=="" || !isNaN(x))
+          alert("Invalid input 1")
+
+          var y=document.forms['lol']['email'].value;
+          if(y=="" || isNaN(y))
+          alert("Invalid input 2")
+        }
+
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <div class="dark" class="container">
+
+    <h3>Contact Us</h3>
+
+
+    <form class="quote" name="lol" onsubmit="return validateform()">
+      <div>
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter Your Name.." name="name">
+      </div>
+      <div>
+        <label>Email Address</label><br>
+        <input type="text" placeholder="Enter Your Email.." name="email">
+      </div>
+      <div>
+        <label>Message</label><br>
+        <textarea placeholder="Type Your Message"></textarea>
+      </div>
+      <button class="button_1" type="submit">Send</button>
+    </form>
+    </div>
+  </body>
+</html>
